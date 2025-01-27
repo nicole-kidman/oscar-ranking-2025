@@ -104,134 +104,29 @@
         <p id="bestPictureRanking"></p>
       </div>
     </div>
-
-    <!-- Best Actor -->
-    <div class="category" id="bestActor">
-      <h2>Best Actor</h2>
-      <div class="options">
-        <div class="option" id="bestActorOptionA"></div>
-        <div class="option" id="bestActorOptionB"></div>
-      </div>
-      <div class="results hidden" id="bestActorResults">
-        <h3>Your Best Actor Ranking:</h3>
-        <p id="bestActorRanking"></p>
-      </div>
-    </div>
-
-    <!-- Best Actress -->
-    <div class="category" id="bestActress">
-      <h2>Best Actress</h2>
-      <div class="options">
-        <div class="option" id="bestActressOptionA"></div>
-        <div class="option" id="bestActressOptionB"></div>
-      </div>
-      <div class="results hidden" id="bestActressResults">
-        <h3>Your Best Actress Ranking:</h3>
-        <p id="bestActressRanking"></p>
-      </div>
-    </div>
-
-    <!-- Best Supporting Actress -->
-    <div class="category" id="bestSupportingActress">
-      <h2>Best Supporting Actress</h2>
-      <div class="options">
-        <div class="option" id="bestSupportingActressOptionA"></div>
-        <div class="option" id="bestSupportingActressOptionB"></div>
-      </div>
-      <div class="results hidden" id="bestSupportingActressResults">
-        <h3>Your Best Supporting Actress Ranking:</h3>
-        <p id="bestSupportingActressRanking"></p>
-      </div>
-    </div>
-
-    <!-- Best Supporting Actor -->
-    <div class="category" id="bestSupportingActor">
-      <h2>Best Supporting Actor</h2>
-      <div class="options">
-        <div class="option" id="bestSupportingActorOptionA"></div>
-        <div class="option" id="bestSupportingActorOptionB"></div>
-      </div>
-      <div class="results hidden" id="bestSupportingActorResults">
-        <h3>Your Best Supporting Actor Ranking:</h3>
-        <p id="bestSupportingActorRanking"></p>
-      </div>
-    </div>
-
-    <!-- Best Director -->
-    <div class="category" id="bestDirector">
-      <h2>Best Director</h2>
-      <div class="options">
-        <div class="option" id="bestDirectorOptionA"></div>
-        <div class="option" id="bestDirectorOptionB"></div>
-      </div>
-      <div class="results hidden" id="bestDirectorResults">
-        <h3>Your Best Director Ranking:</h3>
-        <p id="bestDirectorRanking"></p>
-      </div>
-    </div>
-
-    <!-- Add more categories here as needed -->
   </div>
 
   <script>
-    // Nominees for each category
-    const categories = {
-      bestPicture: [
-        "Anora",
-        "The Brutalist",
-        "A Complete Unknown",
-        "Conclave",
-        "Dune: Part Two",
-        "Emilia Pérez",
-        "I'm Still Here",
-        "Nickel Boys",
-        "The Substance",
-        "Wicked"
-      ],
-      bestActor: [
-        "Adrien Brody - The Brutalist",
-        "Timothée Chalamet - A Complete Unknown",
-        "Colman Domingo - Sing Sing",
-        "Ralph Fiennes - Conclave",
-        "Sebastian Stan - The Apprentice"
-      ],
-      bestActress: [
-        "Cynthia Erivo - Wicked",
-        "Karla Sofía Gascón - Emilia Pérez",
-        "Mikey Madison - Anora",
-        "Demi Moore - The Substance",
-        "Fernanda Torres - I'm Still Here"
-      ],
-      bestSupportingActress: [
-        "Monica Barbaro - A Complete Unknown",
-        "Ariana Grande - Wicked",
-        "Felicity Jones - The Brutalist",
-        "Isabella Rossellini - Conclave",
-        "Zoe Saldaña - Emilia Pérez"
-      ],
-      bestSupportingActor: [
-        "Yura Borisov - Anora",
-        "Kieran Culkin - A Real Pain",
-        "Edward Norton - A Complete Unknown",
-        "Guy Pearce - The Brutalist",
-        "Jeremy Strong - The Apprentice"
-      ],
-      bestDirector: [
-        "Jacques Audiard - Emilia Pérez",
-        "Sean Baker - Anora",
-        "Brady Corbet - The Brutalist",
-        "Coralie Fargeat - The Substance",
-        "James Mangold - A Complete Unknown"
-      ]
-      // Add more categories here as needed
-    };
+    // Nominees for Best Picture
+    const nominees = [
+      "I’m Still Here",
+      "Anora",
+      "Emilia Pérez",
+      "The Brutalist",
+      "A Complete Unknown",
+      "Conclave",
+      "Dune: Part Two",
+      "Nickel Boys",
+      "The Substance",
+      "Wicked"
+    ];
 
-    // Initialize ranking data for each category
-    let comparisons = {};
-    let ranking = {};
-    let currentComparison = {};
+    // Initialize ranking data
+    let comparisons = [];
+    let ranking = [];
+    let currentComparison = 0;
 
-    // Generate all possible pairwise comparisons for a category
+    // Generate all possible pairwise comparisons
     function generateComparisons(nominees) {
       const pairs = [];
       for (let i = 0; i < nominees.length; i++) {
@@ -242,26 +137,26 @@
       return pairs;
     }
 
-    // Display the current comparison for a category
-    function displayComparison(category) {
-      const optionA = document.getElementById(`${category}OptionA`);
-      const optionB = document.getElementById(`${category}OptionB`);
+    // Display the current comparison
+    function displayComparison() {
+      const optionA = document.getElementById("bestPictureOptionA");
+      const optionB = document.getElementById("bestPictureOptionB");
 
-      if (currentComparison[category] < comparisons[category].length) {
-        optionA.textContent = comparisons[category][currentComparison[category]][0];
-        optionB.textContent = comparisons[category][currentComparison[category]][1];
+      if (currentComparison < comparisons.length) {
+        optionA.textContent = comparisons[currentComparison][0];
+        optionB.textContent = comparisons[currentComparison][1];
       } else {
-        calculateRanking(category);
+        calculateRanking();
       }
     }
 
-    // Calculate the final ranking for a category
-    function calculateRanking(category) {
+    // Calculate the final ranking using inferred preferences
+    function calculateRanking() {
       const wins = {};
-      categories[category].forEach(nominee => (wins[nominee] = 0));
+      nominees.forEach(nominee => (wins[nominee] = 0));
 
-      ranking[category].forEach((winner, index) => {
-        const [a, b] = comparisons[category][index];
+      ranking.forEach((winner, index) => {
+        const [a, b] = comparisons[index];
         if (winner === a) {
           wins[a]++;
         } else {
@@ -269,8 +164,11 @@
         }
       });
 
+      // Sort nominees by number of wins
       const sortedRanking = Object.keys(wins).sort((a, b) => wins[b] - wins[a]);
-      const resultsDiv = document.getElementById(`${category}Results`);
+
+      // Display results
+      const resultsDiv = document.getElementById("bestPictureResults");
       const rankingText = sortedRanking
         .map((nominee, index) => {
           if (index === 0) {
@@ -283,11 +181,11 @@
         })
         .join("<br>");
 
-      document.getElementById(`${category}Ranking`).innerHTML = rankingText;
+      document.getElementById("bestPictureRanking").innerHTML = rankingText;
       resultsDiv.classList.remove("hidden");
 
       // Hide the options after results are shown
-      document.querySelector(`#${category} .options`).classList.add("hidden");
+      document.querySelector("#bestPicture .options").classList.add("hidden");
     }
 
     // Helper function to add ordinal suffixes (1st, 2nd, 3rd, etc.)
@@ -298,28 +196,21 @@
     }
 
     // Event listeners for option clicks
-    function setupCategory(category) {
-      document.getElementById(`${category}OptionA`).addEventListener("click", () => {
-        ranking[category].push(comparisons[category][currentComparison[category]][0]);
-        currentComparison[category]++;
-        displayComparison(category);
-      });
+    document.getElementById("bestPictureOptionA").addEventListener("click", () => {
+      ranking.push(comparisons[currentComparison][0]);
+      currentComparison++;
+      displayComparison();
+    });
 
-      document.getElementById(`${category}OptionB`).addEventListener("click", () => {
-        ranking[category].push(comparisons[category][currentComparison[category]][1]);
-        currentComparison[category]++;
-        displayComparison(category);
-      });
-    }
+    document.getElementById("bestPictureOptionB").addEventListener("click", () => {
+      ranking.push(comparisons[currentComparison][1]);
+      currentComparison++;
+      displayComparison();
+    });
 
-    // Initialize the ranking system for each category
-    for (const category in categories) {
-      comparisons[category] = generateComparisons(categories[category]);
-      ranking[category] = [];
-      currentComparison[category] = 0;
-      setupCategory(category);
-      displayComparison(category);
-    }
+    // Initialize the ranking system
+    comparisons = generateComparisons(nominees);
+    displayComparison();
   </script>
 </body>
 </html>
