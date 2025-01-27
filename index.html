@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.3">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;2025 Academy Awards Ranking&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&amp;family=Playfair+Display:wght@700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Roboto', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #000;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 800px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Cinzel', serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 3rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #D4AF37; /* Oscar gold */</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.header-image {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-height: 300px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>object-fit: cover;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.category {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 2px solid #D4AF37; /* Oscar gold frame */</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #1a1a1a;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.category h2 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Playfair Display', serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #D4AF37; /* Oscar gold */</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.options {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.option {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 15px 30px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #333;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid #D4AF37; /* Oscar gold */</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: background-color 0.3s, transform 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.option:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #444;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform: scale(1.05);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.results {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: left;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.results h3 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Playfair Display', serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #D4AF37; /* Oscar gold */</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.results p {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 5px 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.results strong {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #D4AF37; /* Oscar gold */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hidden {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Header Image --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;img src="https://via.placeholder.com/800x300.png?text=Oscar+2025" alt="Oscar 2025" class="header-image"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;2025 Academy Awards Ranking&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Choose your preferred option in each pair to generate your personalized ranking!&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Best Picture --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="category" id="bestPicture"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Best Picture&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="options"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="option" id="bestPictureOptionA"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="option" id="bestPictureOptionB"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="results hidden" id="bestPictureResults"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Your Best Picture Ranking:&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p id="bestPictureRanking"&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Best Actor --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="category" id="bestActor"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Best Actor&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="options"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="option" id="bestActorOptionA"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="option" id="bestActorOptionB"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="results hidden" id="bestActorResults"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Your Best Actor Ranking:&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p id="bestActorRanking"&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Best Actress --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="category" id="bestActress"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Best Actress&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="options"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="option" id="bestActressOptionA"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="option" id="bestActressOptionB"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="results hidden" id="bestActressResults"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Your Best Actress Ranking:&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p id="bestActressRanking"&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Best Supporting Actress --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="category" id="bestSupportingActress"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Best Supporting Actress&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="options"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="option" id="bestSupportingActressOptionA"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="option" id="bestSupportingActressOptionB"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="results hidden" id="bestSupportingActressResults"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Your Best Supporting Actress Ranking:&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p id="bestSupportingActressRanking"&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Best Supporting Actor --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="category" id="bestSupportingActor"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Best Supporting Actor&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="options"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="option" id="bestSupportingActorOptionA"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="option" id="bestSupportingActorOptionB"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="results hidden" id="bestSupportingActorResults"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Your Best Supporting Actor Ranking:&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p id="bestSupportingActorRanking"&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Best Director --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="category" id="bestDirector"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Best Director&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="options"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="option" id="bestDirectorOptionA"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="option" id="bestDirectorOptionB"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="results hidden" id="bestDirectorResults"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Your Best Director Ranking:&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p id="bestDirectorRanking"&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Add more categories here as needed --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Nominees for each category</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const categories = {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>bestPicture: [</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Anora",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"The Brutalist",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"A Complete Unknown",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Conclave",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Dune: Part Two",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Emilia Pérez",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"I'm Still Here",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Nickel Boys",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"The Substance",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Wicked"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>],</p>
+<p class="p1"><span class="Apple-converted-space">      </span>bestActor: [</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Adrien Brody - The Brutalist",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Timothée Chalamet - A Complete Unknown",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Colman Domingo - Sing Sing",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Ralph Fiennes - Conclave",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Sebastian Stan - The Apprentice"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>],</p>
+<p class="p1"><span class="Apple-converted-space">      </span>bestActress: [</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Cynthia Erivo - Wicked",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Karla Sofía Gascón - Emilia Pérez",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Mikey Madison - Anora",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Demi Moore - The Substance",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Fernanda Torres - I'm Still Here"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>],</p>
+<p class="p1"><span class="Apple-converted-space">      </span>bestSupportingActress: [</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Monica Barbaro - A Complete Unknown",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Ariana Grande - Wicked",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Felicity Jones - The Brutalist",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Isabella Rossellini - Conclave",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Zoe Saldaña - Emilia Pérez"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>],</p>
+<p class="p1"><span class="Apple-converted-space">      </span>bestSupportingActor: [</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Yura Borisov - Anora",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Kieran Culkin - A Real Pain",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Edward Norton - A Complete Unknown",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Guy Pearce - The Brutalist",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Jeremy Strong - The Apprentice"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>],</p>
+<p class="p1"><span class="Apple-converted-space">      </span>bestDirector: [</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Jacques Audiard - Emilia Pérez",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Sean Baker - Anora",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Brady Corbet - The Brutalist",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Coralie Fargeat - The Substance",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"James Mangold - A Complete Unknown"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>]</p>
+<p class="p1"><span class="Apple-converted-space">      </span>// Add more categories here as needed</p>
+<p class="p1"><span class="Apple-converted-space">    </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Initialize ranking data for each category</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let comparisons = {};</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let ranking = {};</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let currentComparison = {};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Generate all possible pairwise comparisons for a category</p>
+<p class="p1"><span class="Apple-converted-space">    </span>function generateComparisons(nominees) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const pairs = [];</p>
+<p class="p1"><span class="Apple-converted-space">      </span>for (let i = 0; i &lt; nominees.length; i++) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>for (let j = i + 1; j &lt; nominees.length; j++) {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>pairs.push([nominees[i], nominees[j]]);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>return pairs;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Display the current comparison for a category</p>
+<p class="p1"><span class="Apple-converted-space">    </span>function displayComparison(category) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const optionA = document.getElementById(`${category}OptionA`);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const optionB = document.getElementById(`${category}OptionB`);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (currentComparison[category] &lt; comparisons[category].length) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>optionA.textContent = comparisons[category][currentComparison[category]][0];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>optionB.textContent = comparisons[category][currentComparison[category]][1];</p>
+<p class="p1"><span class="Apple-converted-space">      </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>calculateRanking(category);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Calculate the final ranking for a category</p>
+<p class="p1"><span class="Apple-converted-space">    </span>function calculateRanking(category) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const wins = {};</p>
+<p class="p1"><span class="Apple-converted-space">      </span>categories[category].forEach(nominee =&gt; (wins[nominee] = 0));</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>ranking[category].forEach((winner, index) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const [a, b] = comparisons[category][index];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (winner === a) {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>wins[a]++;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>wins[b]++;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const sortedRanking = Object.keys(wins).sort((a, b) =&gt; wins[b] - wins[a]);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const resultsDiv = document.getElementById(`${category}Results`);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const rankingText = sortedRanking</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.map((nominee, index) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>if (index === 0) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>return `&lt;strong&gt;${nominee}&lt;/strong&gt; is your winner.`;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>} else if (index === 1) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>return `&lt;strong&gt;${nominee}&lt;/strong&gt; is your runner-up.`;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>return `&lt;strong&gt;${nominee}&lt;/strong&gt; is your ${ordinalSuffix(index + 1)} choice.`;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>})</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.join("&lt;br&gt;");</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById(`${category}Ranking`).innerHTML = rankingText;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>resultsDiv.classList.remove("hidden");</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>// Hide the options after results are shown</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.querySelector(`#${category} .options`).classList.add("hidden");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Helper function to add ordinal suffixes (1st, 2nd, 3rd, etc.)</p>
+<p class="p1"><span class="Apple-converted-space">    </span>function ordinalSuffix(num) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const suffixes = ["th", "st", "nd", "rd"];</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const remainder = num % 100;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>return num + (suffixes[(remainder - 20) % 10] || suffixes[remainder] || suffixes[0]);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Event listeners for option clicks</p>
+<p class="p1"><span class="Apple-converted-space">    </span>function setupCategory(category) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById(`${category}OptionA`).addEventListener("click", () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>ranking[category].push(comparisons[category][currentComparison[category]][0]);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>currentComparison[category]++;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>displayComparison(category);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById(`${category}OptionB`).addEventListener("click", () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>ranking[category].push(comparisons[category][currentComparison[category]][1]);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>currentComparison[category]++;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>displayComparison(category);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Initialize the ranking system for each category</p>
+<p class="p1"><span class="Apple-converted-space">    </span>for (const category in categories) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>comparisons[category] = generateComparisons(categories[category]);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>ranking[category] = [];</p>
+<p class="p1"><span class="Apple-converted-space">      </span>currentComparison[category] = 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>setupCategory(category);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>displayComparison(category);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
