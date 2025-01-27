@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -196,8 +197,24 @@
       </div>
     </div>
   </div>
+  
+  <!-- Best Original Song -->
+    <div class="category" id="bestOriginalSong">
+      <h2>Best Original Song</h2>
+      <div class="options">
+        <div class="option" id="bestOriginalSongOptionA"></div>
+        <div class="option" id="bestOriginalSongOptionB"></div>
+      </div>
+      <div class="results hidden" id="bestOriginalSongResults">
+        <h3>Your Best Original Song Ranking:</h3>
+        <p id="bestOriginalSongRanking"></p>
+      </div>
+    </div>
 
   <script>
+  
+  
+  
     // Nominees for each category
     const categories = {
       bestPicture: [
@@ -260,7 +277,15 @@
         "A Real Pain - Jesse Eisenberg",
         "September 5 - Moritz Binder, Tim Fehlbaum, Alex David",
         "The Substance - Coralie Fargeat"
-      ]
+      ],
+      bestOriginalSong: [
+        "El Mal from Emilia Pérez; Music by Clément Ducol and Camille; Lyric by Clément Ducol, Camille and Jacques Audiard",
+"The Journey from The Six Triple Eight; Music and Lyric by Diane Warren", 
+"Like A Bird from Sing Sing; Music and Lyric by Abraham Alexander and Adrian Quesada",
+"Mi Camino from Emilia Pérez; Music and Lyric by Camille and Clément Ducol",
+"Never Too Late from Elton John: Never Too Late; Music and Lyric by Elton John, Brandi Carlile, Andrew Watt and Bernie Taupin"]
+
+      
     };
 
     // Initialize ranking data for each category
