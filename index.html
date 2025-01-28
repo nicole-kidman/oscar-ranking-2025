@@ -45,22 +45,23 @@
       margin-bottom: 15px;
     }
     .options {
-      display: flex;
-      flex-direction: column; /* Stack options vertically */
-      gap: 10px; /* Smaller gap for mobile */
-      margin-bottom: 15px;
-      align: center;
+     display: flex;
+  flex-direction: column; /* Stack options vertically */
+  gap: 10px;
+  margin-bottom: 15px;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
     }
     .option {
-      padding: 10px 20px; /* Smaller padding for mobile */
-      background-color: #333;
-      border: 1px solid #CCAA56;
-      color: #CCAA56;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: background-color 0.3s, transform 0.3s;
-      font-size: 1rem; /* Smaller font size for mobile */
-      align: center;
+     padding: 10px 20px;
+  background-color: #333;
+  border: 1px solid #CCAA56;
+  color: #CCAA56;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: 1rem;
+  text-align: center; /* Ensures text within the button is centered */
     }
     .option:hover {
       background-color: #444;
